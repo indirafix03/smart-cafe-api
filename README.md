@@ -33,52 +33,8 @@ Proyek ini dibuat sebagai **Ujian Tengah Semester (UTS)** mata kuliah **Pemrogra
 
 ---
 
-## Struktur Proyek
-smart-cafe-api/
-│
-├── 📁 auth/ # Modul autentikasi JWT
-│ ├── jwt_handler.py # Generate & verify token
-│ └── dependencies.py # Dependency untuk get_current_user
-│
-├── 📁 models/ # SQLAlchemy models
-│ ├── user.py # Model User
-│ ├── table.py # Model Table
-│ └── reservation.py # Model Reservation
-│
-├── 📁 schemas/ # Pydantic schemas
-│ ├── user_schema.py # UserCreate, UserLogin, UserResponse
-│ ├── table_schema.py # TableCreate, TableResponse
-│ └── reservation_schema.py # ReservationCreate, ReservationResponse
-│
-├── 📁 routers/ # API endpoints
-│ ├── auth_router.py # /auth/register, /auth/login
-│ ├── table_router.py # /tables (GET, POST)
-│ └── reservation_router.py # /reservations (GET, POST, DELETE)
-│
-├── main.py # Entry point aplikasi FastAPI
-├── database.py # Konfigurasi database SQLAlchemy
-├── requirements.txt # Daftar dependencies
-└── README.md # Dokumentasi proyek (file ini)
-
-text
-
----
-
-## ERD (Entity Relationship Diagram)
-┌─────────────────┐ ┌─────────────────────┐ ┌─────────────────┐
-│ User │ │ Reservation │ │ Table │
-├─────────────────┤ ├─────────────────────┤ ├─────────────────┤
-│ id (PK) │◄────────│ user_id (FK) │ │ id (PK) │
-│ username (UNIQ) │ │ table_id (FK) │─────────►│ table_number │
-│ email (UNIQ) │ │ start_time │ │ capacity │
-│ password (hash) │ │ end_time │ │ is_available │
-└─────────────────┘ │ created_at │ └─────────────────┘
-└─────────────────────┘
-
 Relasi: User 1:N Reservation
 Table 1:N Reservation
-
-text
 
 ---
 
@@ -346,7 +302,7 @@ Gunakan 127.0.0.1 bukan localhost
 Atau install Postman Desktop Agent
 
 Author
-Nama: [Indira Ramayani]
+Nama: Indira Ramayani
 NIM: H071241056
 Mata Kuliah: Pemrograman Web Lanjutan
 Semester: Genap 2025/2026
