@@ -1,0 +1,15 @@
+# Folder lingkungan virtual (sangat besar, tidak perlu di-upload)
+venv/
+.venv/
+env/
+
+# Folder cache Python (dibuat otomatis saat dijalankan)
+__pycache__/
+*.pyc
+
+# Database lokal (biar server cloud buat yang baru nanti)
+*.db
+*.db-journal
+
+# File pengaturan lingkungan (jika ada data rahasia seperti SECRET_KEY)
+.env
