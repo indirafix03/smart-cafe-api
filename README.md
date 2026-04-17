@@ -300,15 +300,3 @@ Solusi:
 Gunakan 127.0.0.1 bukan localhost
 
 Atau install Postman Desktop Agent
-```
-
----
-
-Author
-Nama: Indira Ramayani
-NIM: H071241056
-Mata Kuliah: Pemrograman Web Lanjutan
-Semester: Genap 2025/2026
-Universitas: Universitas Hasanuddin
-
----
